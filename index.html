@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Add an icon to the browser tab -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <!-- Add a title to the web page -->
+    <title>Personal Portfolio | Cristian Penagos</title>
+    <!-- Add a description to the web page -->
+    <meta name="description" content="Personal portfolio of Cristian Penagos">
+</head>
+
+<body>
+    <!-- Portfolio navigation bar using <nav> -->
+    <header class="container">
+        <nav>
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <!-- First section where information about me is shown. -->
+        <section class="card about-me" id="about-me">
+            <h1 class="title">Cristian Penagos</h1>
+            
+            <div class="container-about-me">
+                
+                <figure class="profile-img">
+                    <img src="assets/img/profile-img.png" alt="Profile Imagen Cristian Penagos">
+                </figure>
+
+                <article>
+                    <header>
+                        <h2 class="title-h2">About me</h2>
+                    </header>
+
+                    <p>Hello, I am Cristian</p>
+                    <p>I am a passionate trainee developer who loves technology and continuous learning. I am proficient
+                        in HTML, CSS, and Java, and I am currently learning Python to expand my backend development
+                        skills.</p>
+
+                    <div class="personal-info">
+                        <ul>
+                            <li>🆔 1.192.812.828</li>
+                            <li>📧 <a href="mailto:suarezalejo26@gmail.com" class="email">suarezalejo26@gmail.com</a></li>
+                            <li>📍 Medellín</li>
+                            <li>📱 314 519 8282</li>
+                        </ul>
+                    </div>              
+
+                    <!-- Table showing My Skills -->
+                    <div class="table-about-me">
+                        <h2 class="title-h2 title-skills">My Skills</h2>
+                        <table>
+                            <tr>
+                                <th scope="col">Skill</th>
+                                <th scope="col">Level</th>
+                            </tr>
+                            <tr>
+                                <td>Python</td>
+                                <td><data value="3">⭐⭐⭐</data></td>
+                            </tr>
+                            <tr>
+                                <td>Html</td>
+                                <td><data value="3">⭐⭐⭐</data></td>
+                            </tr>
+                            <tr>
+                                <td>CSS</td>
+                                <td><data value="3">⭐⭐⭐</data></td>
+                            </tr>
+                        </table>
+                    </div>
+                </article>    
+            </div>            
+        </section>
+
+        <!-- Section where the contact information and a form are displayed -->
+        <section id="contact" class="card contact">
+
+            <article>
+                <h1 class="title">Contact</h1>
+                <h2 class="title-h2 email-contact"><a href="mailto:suarezalejo26@gmail.com" class="email">suarezalejo26@gmail.com</a></h2>
+                <p>Feel free to contact me with any inquiries or questions!</p>
+            </article>
+
+            <div class="form">
+                <form action="/send" method="post">
+                    <div class="input1">
+                        <input type="text" id="name" name="name" placeholder="Your name.." required>
+                        <input type="email" id="email" name="email" placeholder="Your email.." required>
+                    </div>
+                    <textarea id="message" name="message" placeholder="Write something.." required></textarea>
+                    <input id="submit" type="submit" value="Submit">
+                </form>
+            </div>
+
+            <!-- Social networks -->
+            <footer class="social-networks">
+                <ul>
+                    <li><a href="https://github.com/xXCpFireXx" target="_blank">
+                            <div class="social-img"><img src="assets/img/github-icon.svg" alt="github"></div>
+                        </a></li>
+                    <li><a href="https://www.instagram.com/cristian.penagos.s" target="_blank">
+                            <div class="social-img" id="instagram"><img src="assets/img/instagram-icon.svg" alt="Instagram"></div>
+                        </a></li>
+                </ul>
+            </footer>
+        </section>
+            <h5 class="copy-right">© 2025 Cristian Penagos. All rights reserved.</h5>
+    </main>
+</body>
+
+</html>
