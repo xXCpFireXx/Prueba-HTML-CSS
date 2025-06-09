@@ -1,8 +1,8 @@
 /* Import Outfit font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-/* Reset default margins/padding and set box-sizing for consistent layout */
 
+/* Variables are established for the colors */
 :root{
     --floral-white: #fffcf2ff;
     --timberwolf: #ccc5b9ff;
@@ -11,6 +11,7 @@
     --flame: #eb5e28ff;
 }
 
+/* Reset default margins/padding and set box-sizing for consistent layout */
 * {
     margin: 0;
     padding: 0;
@@ -94,12 +95,12 @@ nav ul li a:hover {
     margin: 1rem 0;
 }
 
+/* ------------------------------ ABOUT ME ------------------------------ */
 .about-me{
     margin-top: 7rem;
 }
 
 /* Title of CARD */
-
 .title{
     font-size: 2.6rem;
     margin-bottom: 2rem;
@@ -269,8 +270,11 @@ nav ul li a:hover {
 .copy-right {
     margin: 1rem;
     text-align: center;
-} 
+}
 
+/* ---------------------------- MEDIA QUERYS ---------------------------- */
+
+/* BREAKPOINT TABLET(768px) */
 @media screen and (max-width:768px){
     .container-about-me {
         flex-direction: column;
@@ -283,6 +287,7 @@ nav ul li a:hover {
 
 }
 
+/* BREAKPOINT MOBILE(480px) */
 @media screen and (max-width:480px){
     .input1{
         flex-direction: column;
