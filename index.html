@@ -4,223 +4,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- Add an icon to the browser tab -->
-    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
-    <!-- Import a font from Google Fonts called Outfit -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
     <!-- Add a title to the web page -->
-    <title>My Personal Portfolio | Cristian Penagos</title>
-    <meta name="description" content="Personal portfolio of Cristian Penagos as a Riwi developer.">
+    <title>Personal Portfolio | Cristian Penagos</title>
+    <!-- Add a description to the web page -->
+    <meta name="description" content="Personal portfolio of Cristian Penagos">
 </head>
 
 <body>
     <!-- Portfolio navigation bar using <nav> -->
-    <nav>
-        <ul>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <!-- Tag <main> to display all sections of the portfolio. -->
-    <main>
+    <header class="container">
+        <nav>
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
         <!-- First section where information about me is shown. -->
-        <section id="about-me" class="card">
-            <h1 id="title-name">Cristian Penagos - Riwi Developer</h1>
-
-            <div>
-                <figure class="profile-imagens">
-                    <img src="./img/cristian_fondo_gradiant.png" alt="Profile Imagen">
+        <section class="card about-me" id="about-me">
+            <h1 class="title">Cristian Penagos</h1>
+            
+            <div class="container-about-me">
+                
+                <figure class="profile-img">
+                    <img src="assets/img/profile-img.png" alt="Profile Imagen Cristian Penagos">
                 </figure>
+
                 <article>
                     <header>
-                        <h2>About me</h2>
+                        <h2 class="title-h2">About me</h2>
                     </header>
+
                     <p>Hello, I am Cristian</p>
                     <p>I am a passionate trainee developer who loves technology and continuous learning. I am proficient
                         in HTML, CSS, and Java, and I am currently learning Python to expand my backend development
                         skills.</p>
-                    <footer>
+
+                    <div class="personal-info">
                         <ul>
-                            <li>🆔 <b>CC:</b> 1192812828</li>
-                            <li>📧 <b>Email:</b><a href="mailto:suarezalejo26@gmail.com">suarezalejo26@gmail.com</a>
-                            </li>
-                            <li>📍 <b>Medellín</b></li>
-                            <li>📱 <b>Tel:</b> 314 519 8282</li>
+                            <li>🆔 1.192.812.828</li>
+                            <li>📧 <a href="mailto:suarezalejo26@gmail.com" class="email">suarezalejo26@gmail.com</a></li>
+                            <li>📍 Medellín</li>
+                            <li>📱 314 519 8282</li>
                         </ul>
-                    </footer>
-                </article>
-            </div>
-            <!-- Table showing My Skills -->
-            <div id="table-about-me">
-                <h2>My Skills</h2>
-                <table>
-                    <tr>
-                        <th scope="col">Habilidad</th>
-                        <th scope="col">Nivel</th>
-                    </tr>
-                    <tr>
-                        <td>Python</td>
-                        <td><data value="3">⭐⭐⭐</data></td>
-                    </tr>
-                    <tr>
-                        <td>Html</td>
-                        <td><data value="3">⭐⭐⭐</data></td>
-                    </tr>
-                    <tr>
-                        <td>CSS</td>
-                        <td><data value="3">⭐⭐⭐</data></td>
-                    </tr>
-                </table>
-            </div>
+                    </div>              
+
+                    <!-- Table showing My Skills -->
+                    <div class="table-about-me">
+                        <h2 class="title-h2 title-skills">My Skills</h2>
+                        <table>
+                            <tr>
+                                <th scope="col">Skill</th>
+                                <th scope="col">Level</th>
+                            </tr>
+                            <tr>
+                                <td>Python</td>
+                                <td><data value="3">⭐⭐⭐</data></td>
+                            </tr>
+                            <tr>
+                                <td>Html</td>
+                                <td><data value="3">⭐⭐⭐</data></td>
+                            </tr>
+                            <tr>
+                                <td>CSS</td>
+                                <td><data value="3">⭐⭐⭐</data></td>
+                            </tr>
+                        </table>
+                    </div>
+                </article>    
+            </div>            
         </section>
-        <!-- Section where the projects are shown. -->
-        <section id="projects" class="card">
-            <h1>Projects</h1>
 
-            <div>
-                <div class="grid">
-                    <img id="item1" src="img/rekatea.jpg" alt="reKatea Desing">
-                    <img id="item2" src="img/dpto.jpg" alt="Departamento de Radiologia Website">
-                    <img id="item3" src="img/wesearch.jpg" alt="weSearch Desing">
-                </div>
-<!--                 <figure id="weSearch">
-                    <img src="./img/collage.png" alt="Project weSearch">
-                </figure> -->
-
-                <p>In this section, you will find a comprehensive list of the projects I have successfully completed.
-                    Each project showcases my skills, dedication, and the ability to deliver results that meet or exceed
-                    expectations. From concept to execution, these works reflect my commitment to quality,
-                    problem-solving, and continuous improvement.</p>
-                <!-- <div> where the projects are listed. -->
-                <div id="list-projects">
-                    <details name="projects">
-                        <summary>
-                            <h3>Departamento de Radiología</h3>
-                        </summary>
-                        <div>
-                            <figure id="img-project">
-                                <img src="./img/dpto_logo.png" alt="Departamento de Radiología Project">
-                            </figure>
-                            <article>
-                                <h3>🧾 Descripcion</h3>
-                                <p>This project consists of the development of an informative and functional website for
-                                    the Radiology Department. Its objective is to provide patients and users with clear
-                                    information about the services offered by the company, as well as to facilitate
-                                    contact and enhance the digital presence of the institution.</p>
-
-                                <h3>💻 Technologies Used</h3>
-                                <ul>
-                                    <li>Html</li>
-                                    <li>CSS</li>
-                                    <li>JavaScript</li>
-                                    <li>PHP</li>
-                                </ul>
-                                <div id="foot">
-                                    <div id="div-button"><a href="https://github.com/xXCpFireXx/RadiologiaWeb"
-                                            target="_blank" id="button-dpto" class="button">View Code</a></div>
-                                    <div id="div-button"><a href="https://dptoradiologia.com/" target="_blank"
-                                            id="button-dpto" class="button">View Page</a></div>
-                                </div>
-                            </article>
-                        </div>
-                    </details>
-
-                    <details name="projects">
-                        <summary>
-                            <h3>weSearch</h3>
-                        </summary>
-                        <div id="open">
-                            <figure id="img-project">
-                                <img src="./img/wesearch_logo.png" alt="Departamento de Radiología Project">
-                            </figure>
-                            <article>
-                                <h3>🧾 Descripcion</h3>
-                                <p>This project was developed in collaboration with my teammate Camila. The application
-                                    is designed to help students search for professional internships, in connection with
-                                    the institution Uniminuto.</p>
-
-                                <h3>💻 Technologies Used</h3>
-                                <ul>
-                                    <li>Html</li>
-                                    <li>CSS</li>
-                                    <li>JavaScript</li>
-                                    <li>PHP</li>
-                                </ul>
-                                <div id="div-button"><a href="https://github.com/Militaseeee/weSearch" target="_blank"
-                                        id="button-wesearch" class="button">View Project</a></div>
-                            </article>
-                        </div>
-                    </details>
-
-                    <details name="projects">
-                        <summary>
-                            <h3>Rekatear</h3>
-                        </summary>
-                        <div>
-                            <figure id="img-project">
-                                <img src="./img/rekatear_logo.png" alt="Departamento de Radiología Project">
-                            </figure>
-                            <article>
-                                <h3>🧾 Descripcion</h3>
-                                <p>This project is a web platform where products are acquired through a bidding system,
-                                    similar to an online auction. Instead of fixed prices, users place offers within a
-                                    set time limit, and the highest valid bid wins the item. This creates a dynamic and
-                                    competitive shopping experience, allowing buyers to potentially get better deals and
-                                    sellers to benefit from demand-driven pricing.</p>
-
-                                <h3>💻 Technologies Used</h3>
-                                <ul>
-                                    <li>Html</li>
-                                    <li>CSS</li>
-                                    <li>JavaScript</li>
-                                </ul>
-                                <div id="div-button"><a href="https://github.com/Juan64205/reKatea" target="_blank"
-                                        id="button-rekatea" class="button">View Project</a></div>
-                            </article>
-                        </div>
-                    </details>
-
-                </div>
-            </div>
-        </section>
         <!-- Section where the contact information and a form are displayed -->
-        <section id="contact" class="card">
+        <section id="contact" class="card contact">
+
             <article>
-                <h1>Contact</h1>
-                <h2><a href="mailto:suarezalejo26@gmail.com">suarezalejo26@gmail.com</a></h2>
+                <h1 class="title">Contact</h1>
+                <h2 class="title-h2 email-contact"><a href="mailto:suarezalejo26@gmail.com" class="email">suarezalejo26@gmail.com</a></h2>
                 <p>Feel free to contact me with any inquiries or questions!</p>
             </article>
-            <div id="form">
+
+            <div class="form">
                 <form action="/send" method="post">
-                    <div id="input-1">
+                    <div class="input1">
                         <input type="text" id="name" name="name" placeholder="Your name.." required>
-
                         <input type="email" id="email" name="email" placeholder="Your email.." required>
-
                     </div>
                     <textarea id="message" name="message" placeholder="Write something.." required></textarea>
-
                     <input id="submit" type="submit" value="Submit">
                 </form>
             </div>
 
             <!-- Social networks -->
-            <footer>
+            <footer class="social-networks">
                 <ul>
                     <li><a href="https://github.com/xXCpFireXx" target="_blank">
-                            <div class="social"><img src="./img/github (1).png" alt="github"></div>
+                            <div class="social-img"><img src="assets/img/github-icon.svg" alt="github"></div>
                         </a></li>
                     <li><a href="https://www.instagram.com/cristian.penagos.s" target="_blank">
-                            <div class="social" id="instagram"><img src="./img/instagram.png" alt="Instagram"></div>
+                            <div class="social-img" id="instagram"><img src="assets/img/instagram-icon.svg" alt="Instagram"></div>
                         </a></li>
                 </ul>
             </footer>
-            <h5>© 2025 Cristian Penagos. All rights reserved.</h5>
         </section>
+            <h5 class="copy-right">© 2025 Cristian Penagos. All rights reserved.</h5>
+    </main>
 </body>
 
 </html>
