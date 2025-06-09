@@ -2,13 +2,10 @@
 This project is my personal portfolio where you will find three sections (*About me, Projects and Contact*).
 
 ## 💁‍♂️ Personal Information
-🙋‍♂️ Cristian Alejandro Penagos Suarez
-
-📚 Clan **Gosling**
-
-📧 suarezalejo26@gmail.com
-
-🆔 1192812828
+* 🙋‍♂️ Cristian Alejandro Penagos Suarez
+* 📚 Clan **Gosling**
+* 📧 suarezalejo26@gmail.com
+* 🆔 1192812828
 
 ## 📁 Layout
 ```
