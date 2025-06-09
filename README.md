@@ -11,6 +11,7 @@ This project is my personal portfolio where you will find three sections (*About
 🆔 1192812828
 
 ## 📁 Layout
+```
 /Prueba-HTML-CSS
 │
 ├── index.html
@@ -23,7 +24,7 @@ This project is my personal portfolio where you will find three sections (*About
 └── /css
     └── styles.css
     └── projects.css
-
+```
 ## 📂 HTML Files
 
 - **index.html**: Main page of the project, where personal information and a contact form are located.
